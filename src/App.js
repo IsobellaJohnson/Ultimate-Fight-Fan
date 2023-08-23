@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Rankings from './components/Rankings/Rankings'
 
 function App() {
+
+        // Filter the results where name is "pound_for_pound"
+/*         const competitorData = responseData.rankings[0].competitor_rankings;
+        const updatedCompetitorList = competitorData.map((competitorRanks) => ({
+          rank: competitorRanks.rank,
+          name: competitorRanks.competitor.name
+        }));
+
+        // Set the competitorList state
+        setCompetitorList(updatedCompetitorList); */
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Rankings/>
     </div>
   );
 }

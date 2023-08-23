@@ -1,0 +1,40 @@
+.rankings {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  justify-content: center; /* Center children vertically */
+}
+
+/* Style the rankings-container as you already have */
+.rankings-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  gap: 20px;
+  width: 80%;
+  max-width: 80%;
+}
+
+  
+  .rankings-container > * {
+    flex: 1; /* Each DivisionRankings container takes an equal portion of the row */
+    min-width: calc(25% - 20px); /* 25% width with a 20px gap between items */
+  }
+  .rank-list{
+    list-style:none;
+  }
+
+  @media (max-width: 968px) {
+    .rankings-container {
+      /* Change the layout for smaller screens */
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items horizontally */
+      gap: 10px; /* Reduce spacing between items */
+    }
+  }
+  
+  
+  
+  
+  
