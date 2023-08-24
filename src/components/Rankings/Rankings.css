@@ -4,6 +4,10 @@
   align-items: center; /* Center children horizontally */
   justify-content: center; /* Center children vertically */
 }
+.rankings-header{
+    font-family: 'Oswald', san-serif !important;
+    font-size: 40px;
+}
 
 /* Style the rankings-container as you already have */
 .rankings-container {
@@ -15,9 +19,21 @@
   width: 80%;
   max-width: 80%;
 }
-
-  
-  .rankings-container > * {
+.ranking-card {
+    box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.5), inset 0 0 5px 0 rgba(255, 255, 255, 0.2);
+    background-color: 	rgba(255, 255, 255, 0.1)!important;
+    padding-left: 20px;
+}
+.competitor-btn{
+    color: rgb(112, 112, 112) !important;
+    font-family: 'Poppins', san-serif !important;
+    font-weight: 600;
+}
+.division{
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 24px !important;
+}
+.rankings-container > * {
     flex: 1; /* Each DivisionRankings container takes an equal portion of the row */
     min-width: calc(25% - 20px); /* 25% width with a 20px gap between items */
   }

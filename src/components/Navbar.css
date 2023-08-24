@@ -1,0 +1,23 @@
+.logo{
+    width: 30%;
+    min-width: 20%;
+}
+.logo-box{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.nav-container{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.5), inset 0 0 5px 0 rgba(255, 255, 255, 0.2);
+    background-color: 	rgb(210, 43, 43)!important;
+}
+.btn-box{
+    display: flex;
+}
+.nav-btn:hover{
+    color: white !important;
+}
